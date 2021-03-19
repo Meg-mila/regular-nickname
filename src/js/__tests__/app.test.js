@@ -13,7 +13,7 @@ test.each([
   ['Mr_cat8', false],
   ['-l-nemo', false],
   ['lа-n5555emo', false],
-])('nickname valid', (name, expected) => {
+])('nickname invalid', (name, expected) => {
   const nickname = new Validator(name);
   expect(nickname.validateUsername()).toBe(expected);
 });
