@@ -12,7 +12,8 @@ test.each([
   ['4meg-mila', false],
   ['Mr_cat8', false],
   ['-l-nemo', false],
-  ['lа-n5555emo', false],
+  ['lа5555emo', false],
+  ['lа*nemo', false],
 ])('nickname invalid', (name, expected) => {
   const nickname = new Validator(name);
   expect(nickname.validateUsername()).toBe(expected);
