@@ -4,6 +4,7 @@ test.each([
   ['meg-mila', true],
   ['Mr_cat', true],
   ['l-nemo', true],
+  ['Ms123nemo', true],
 ])('nickname valid', (name, expected) => {
   const nickname = new Validator(name);
   expect(nickname.validateUsername()).toBe(expected);
